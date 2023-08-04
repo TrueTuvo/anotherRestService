@@ -15,8 +15,11 @@ public class TodoEntity {
     @JoinColumn(name = "user_id")
     private UserEntity user;
 
+    private String description;
+
     public TodoEntity() {
     }
+
     public TodoEntity(Long id, String title, Boolean completed) {
         this.id = id;
         this.title = title;
@@ -29,6 +32,14 @@ public class TodoEntity {
 
     public void setCompleted(Boolean completed) {
         this.completed = completed;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Long getId() {

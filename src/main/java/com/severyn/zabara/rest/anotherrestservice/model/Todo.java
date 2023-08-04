@@ -22,6 +22,7 @@ public class Todo {
         model.setId(todoEntity.getId());
         model.setTitle(todoEntity.getTitle());
         model.setCompleted(todoEntity.getCompleted());
+        model.setDescription(todoEntity.getDescription());
         return model;
     }
 
